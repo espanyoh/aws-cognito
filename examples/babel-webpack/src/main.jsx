@@ -44,7 +44,7 @@ class SignUpForm extends React.Component {
         Value: email,
       })
     ];
-    userPool.signUp(email, password, attributeList, null, (err, result) => {
+    userPool.signUp('username2', password, attributeList, null, (err, result) => {
       if (err) {
         console.log(err);
         return;
@@ -72,4 +72,3 @@ class SignUpForm extends React.Component {
 }
 
 ReactDOM.render(<SignUpForm />, document.getElementById('app'));
-
